@@ -3,20 +3,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Developer Documention',
+  tagline: 'Connecting you with modern money...',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'jhey', // Usually your GitHub org/user name.
+  projectName: 'sperax-help-jhey', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Sperax Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Sperax Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -28,13 +28,47 @@ module.exports = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/jhey/sperax-help-jhey',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/jhey/sperax-help-jhey',
+          label: 'Whitepaper',
+          position: 'right',
+        },
+        {
+          to: '/grnats',
+          label: 'Grants',
           position: 'right',
         },
       ],
     },
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+      switchConfig: {
+        darkIcon: '☼',
+        darkIconStyle: {
+          marginLeft: '2px',
+        },
+        // Unicode icons such as '\u2600' will work
+        // Unicode with 5 chars require brackets: '\u{1F602}'
+        // lightIcon: '\u{1F602}',
+        lightIcon: '☽',
+        lightIconStyle: {
+          color: '#fff',
+          marginLeft: '1px',
+        },
+      },
+    },
     footer: {
+      logo: {
+        alt: 'sperax Logo',
+        src: 'img/sperax logo_white.svg',
+        href: 'https://sperax.io/',
+      },
       style: 'dark',
       links: [
         {
@@ -77,7 +111,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Sperax Foundation © Sperax ${new Date().getFullYear()}. All rights reserved. `,
     },
     prism: {
       theme: lightCodeTheme,
@@ -106,4 +140,8 @@ module.exports = {
       },
     ],
   ],
+
+
+
+  
 };

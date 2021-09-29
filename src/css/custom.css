@@ -15,6 +15,19 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+
+  --ifm-color-primary: #008b95;
+--ifm-color-primary-dark: #007d86;
+--ifm-color-primary-darker: #00767f;
+--ifm-color-primary-darkest: #006168;
+--ifm-color-primary-light: #0099a4;
+--ifm-color-primary-lighter: #00a0ab;
+--ifm-color-primary-lightest: #00b5c2;
+
+--ifm-footer-background-color: #464646;
+
+--ifm-color-emphasis-400: #008b95;
+
 }
 
 .docusaurus-highlight-code-line {
@@ -26,4 +39,219 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer--dark {
+  background-color: #464646;
+}
+
+/* 47D5CD */
+
+.button--secondary:not(.button--outline):hover {
+  /* --ifm-button-background-color: var(--ifm-color-secondary-dark); */
+  --ifm-button-background-color: #47D5CD;
+  --ifm-button-border-color: #47D5CD;
+}
+
+/* frameborder="0" allowfullscreen="0" */
+iframe {
+  border: 0px red solid;
+  }
+  
+
+  .footer--dark {
+    background-image: url("../../static/img/bannercommon.jpg");
+  }
+
+  .introblock:hover {
+    border: 1px solid var(--ifm-color-emphasis-400);
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 5%);
+    }
+  .introblock {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* max-height: 250px; */
+    /* min-width: 350px; */
+    padding: .7rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 5%);
+    background-color: #ffffff10;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* min-height: 200px; */
+}
+
+.introheader {
+  background: #008b95;
+  height: 100%;
+  margin: 0px;
+  display: flex;
+}
+
+.iconstop {
+  float: left;
+  clear: both;
+  color: #47D5CD;
+  font-size: 1.4em;
+}
+.iconlaunch {
+  float: right;
+  clear: both;
+  display: inline-block;
+  position: relative;
+  color: #f5f5f5;
+  font-size: .9em;
+}
+.react-toggle-track {
+  width: 55px;
+}
+
+.navbar__logo {
+  height: 25px;
+}
+
+.css-holder {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+
+.css-tuts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px;
+}
+
+
+.css-golink {
+  /* color: purple; */
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 250px;
+    min-width: 350px;
+    padding: 1rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+
+
+
+}
+.css-golink:hover {
+  border: 1px solid var(--ifm-color-emphasis-400);
+  box-shadow: 0px 6px 10px rgb(0 0 0 / 5%);
+}
+
+
+
+.css-golink {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.css-golink > p {
+  color: green
+}
+.iconstop h4 {
+  color: black;
+}
+
+.css-golink p {
+  color: black;
+  margin: 0px;
+  font-size: 14px;
+}
+
+html[data-theme='dark'] .iconstop h4 {
+    color: white;
+  }
+  
+  html[data-theme='dark'] .css-golink p {
+    color: white;
+    margin: 0px;
+    font-size: 14px;
+  }
+   
+.gitIco {
+  float: left;
+  clear: both;
+  margin-right: 10px;
+  position: relative;
+font-size: 20px;
+color: black;
+  }
+
+  html[data-theme='dark'] .gitIco {
+
+  color: white;
+    }
+  
+
+
+.footer__bottom img {
+  opacity: 1 !important;
+  transition: opacity var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+  height: 40px;
+}
+
+.dev-col .css-golink p {
+  color: purple;
+height: auto; 
+}
+
+.heroBanner_src-pages-index-module {
+  padding: 4rem 0;
+  padding-top: 0rem !important;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.react-toggle-track-x {
+  width: 25px;
+}
+
+.doc-page {
+  background-color: #fff;
+  background-image: url("../../static/img/bannercommon-white.jpg"); 
+  background-repeat:no-repeat;
+   background-size:contain;
 }

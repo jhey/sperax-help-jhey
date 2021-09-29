@@ -6,10 +6,17 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
+import { FaRegClock } from 'react-icons/fa';
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <>
+
+<div className="container-fluid introheader">
+<iframe width="100%" height="100%" src="https://nodebox.live/embed/julio/speraxlogo1/main?autoplay=true"></iframe>
+ </div>
+     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -17,11 +24,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Build with Sperax - 5 min. Tutorial  <><FaRegClock /></>
           </Link>
         </div>
       </div>
     </header>
+    </>
   );
 }
 
@@ -29,9 +37,10 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Connecting you with modern money">
       <HomepageHeader />
+      
       <main>
         <HomepageFeatures />
       </main>
