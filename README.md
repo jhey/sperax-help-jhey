@@ -1,6 +1,6 @@
 # DEMO
-https://jheycreative.com/sperax-docs-ui/
-
+Live demo https://jheycreative.com/sperax-docs-ui/
+Video: https://youtu.be/r5WrtLgCHfc
 
 # Website
 
